@@ -11,7 +11,6 @@ I just created a new pedestal project (with the new 0.2.2 version of the tools) 
 
  - in the tutorial-service folder, `lein repl`, `start`
  - In the tutorial-client folder, `lein repl`, `start`, `(cljs-repl)`
- - in another terminal launch Chrome with the `--disable-web-security switch`
  - load the app (http://localhost:3000)
  - load the development aspect
  - in the repl type `(js/alert "hello !")` if the popup shows up, you have a working repl
