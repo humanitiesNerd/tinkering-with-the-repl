@@ -11,8 +11,9 @@
             [clojure.browser.repl :as repl]))
 
 (def to-be-monitored-app)
-;(ns debugging (:require [tutorial-client.start :as start]))
-;(get-in start/to-be-monitored-app [:app :state])
+
+
+
 
 (defn create-app [render-config]
   (let [app (app/build (post/add-post-processors behavior/example-app))
@@ -29,4 +30,16 @@
     (repl/connect "http://localhost:9000/repl")
     (set! to-be-monitored-app app)
     app))
+
+(comment
+
+(ns debugging (:require 
+                       [tutorial-client.start :as start]
+                       [io.pedestal.app.protocols :as p]))
+
+(keys (get-in start/to-be-monitored-app [:app]))
+(get-in start/to-be-monitored-app [:app :state])
+(:input (get-in start/to-be-monitored-app [:app]))
+
+)
 
