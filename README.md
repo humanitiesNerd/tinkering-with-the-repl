@@ -22,3 +22,8 @@ I just created a new pedestal project (with the new 0.2.2 version of the tools) 
 # a warning
 
 this machinery uses to deposit  a hidden folder named `.repl` in the project root. Sometimes the repl behaves incorrectly and shows inexplicable errors. Before anything else, throw away the `.repl` folder, restart the servers and try again
+
+# example use
+
+a short footage
+http://www.youtube.com/watch?v=3AYKXRby5oE
